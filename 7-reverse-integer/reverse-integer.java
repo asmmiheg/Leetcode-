@@ -5,7 +5,6 @@ class Solution {
             int digit = x % 10;
             x = x / 10;
 
-            // Overflow checks BEFORE multiplying/adding
             if (reversed > Integer.MAX_VALUE / 10 ||
                 (reversed == Integer.MAX_VALUE / 10 && digit > 7)) {
                 return 0;
